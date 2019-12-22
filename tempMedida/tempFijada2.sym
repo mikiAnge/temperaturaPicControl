@@ -1,0 +1,200 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+005     PORTA
+006     kbd
+006     PORTB
+007     PORTC
+008     lcd
+008     lcdlat
+008     PORTD
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026     kbd_getc.kbd_call_count
+027.0   kbd_getc.kbd_down
+028     kbd_getc.last_key
+029     kbd_getc.col
+02A-02B temp
+02C-02F temo
+030-031 conversion
+032-033 conversion1
+034     DIR
+035     @TRIS_C
+036     MAIN.K
+037-038 MAIN.aux
+039     i
+03A-03D comp
+03E-03F atol.s
+03E-03F @ITOF.P1
+03E     tecla_time.c
+03E-03F @MUL1616.P1
+03E-041 @FLT.P2
+03E     lcd_init.i
+03E     @PSTRINGCN7_362.P1
+03E-041 @PRINTF_L32D_362FPFPF.P2
+03E-03F @SITOF.P3
+03E     MAIN.@SCRATCH1
+03E     @PSTRINGC7_362.@SCRATCH1
+03F-040 tecla_time.timeout
+03F     lcd_init.@SCRATCH1
+03F     MAIN.@SCRATCH2
+03F     @PSTRINGC7_362.@SCRATCH2
+03F     @PSTRINGCN7_362.@SCRATCH1
+040-041 atol.result
+040-041 @DIV1616.P1
+040-041 @MUL1616.P2
+040     @PSTRINGC7_362.@SCRATCH3
+040     @PSTRINGCN7_362.@SCRATCH2
+041     kbd_getc.kchar
+041     @PSTRINGCN7_362.@SCRATCH3
+042     kbd_getc.row
+042-043 @DIV1616.P1
+042-045 @FLT.P2
+042     atol.sign
+042     @PRINTF_L32D_362FPFPF.P1
+042     @MUL1616.@SCRATCH1
+043     atol.base
+043     kbd_getc.@SCRATCH1
+043     @PRINTF_L32D_362FPFPF.@SCRATCH1
+044     atol.index
+044     @DIV1616.@SCRATCH1
+044     @PRINTF_L32D_362FPFPF.@SCRATCH2
+045     atol.c
+045     @PRINTF_L32D_362FPFPF.@SCRATCH3
+046-047 @MULS1616.P1
+046     atol.@SCRATCH1
+046     @PRINTF_L32D_362FPFPF.@SCRATCH4
+046     @FLT.@SCRATCH1
+047     atol.@SCRATCH2
+047     @PRINTF_L32D_362FPFPF.@SCRATCH5
+047     @FLT.@SCRATCH2
+048-049 @MULS1616.P1
+048     atol.@SCRATCH3
+048     @PRINTF_L32D_362FPFPF.@SCRATCH6
+049     @PRINTF_L32D_362FPFPF.@SCRATCH7
+04A     @MULS1616.@SCRATCH1
+04A     @PRINTF_L32D_362FPFPF.@SCRATCH8
+04B-04E @MULFF.P1
+04B-04E @FTOSD.P2
+04B     lcd_putc.c
+04B-04E @DIV3232.P1
+04B     @MULS1616.@SCRATCH2
+04C     @delay_ms1.P1
+04C     lcd_gotoxy.x
+04D     lcd_gotoxy.y
+04E     lcd_gotoxy.address
+04F-052 @MULFF.P1
+04F-052 @DIV3232.P2
+04F     lcd_gotoxy.@SCRATCH1
+04F     @FTOSD.@SCRATCH1
+050     lcd_send_byte.address
+051     lcd_send_byte.n
+052     lcd_read_byte.low
+052     lcd_send_byte.@SCRATCH1
+053     lcd_send_nibble.n
+053     lcd_read_byte.high
+053     @MULFF.@SCRATCH1
+053     @DIV3232.@SCRATCH1
+054     @MULFF.@SCRATCH2
+054     lcd_read_byte.@SCRATCH1
+054     @DIV3232.@SCRATCH2
+055     @MULFF.@SCRATCH3
+055     @DIV3232.@SCRATCH3
+056     @MULFF.@SCRATCH4
+056     @DIV3232.@SCRATCH4
+057     @MULFF.@SCRATCH5
+057     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+003C  @delay_ms1
+0495  @MULS1616
+02DC  @MULFF
+021B  @ITOF
+0422  atol
+01F6  @DIV1616
+0004  LCD_INIT_STRING
+0064  lcd_read_byte
+005D  lcd_read_nibble
+0051  lcd_send_nibble
+0063  lcd_send_byte
+009E  lcd_init
+00D1  lcd_gotoxy
+00E3  lcd_putc
+000C  KEYS
+00CE  kbd_init
+014E  kbd_getc
+01B6  @goto11317
+01BE  tecla_time
+05C0  MAIN
+0025  @const400
+0108  @PSTRINGC7_362
+0026  @const403
+0020  @const404
+002B  @const405
+01E1  @MUL1616
+002C  @const409
+0238  @PSTRINGCN7_362
+0362  @FTOSD
+0286  @DIV3232
+02C8  @PRINTF_L32D_362FPFPF
+0034  @const420
+0558  @SITOF
+057F  @FLT
+05C0  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\PILAR\Desktop\ProyectoPICfuncional\tempMedida\
+
+Project Files:
+    tempFijada2.c
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F887.H
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\KBD4x4.C
+
+Units:
+    C:\Users\PILAR\Desktop\ProyectoPICfuncional\tempMedida\tempFijada2 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      tempFijada2.err
+    Ext Symbols: tempFijada2.esym
+    INHX8:       tempFijada2.hex
+    Symbols:     tempFijada2.sym
+    List:        tempFijada2.lst
+    Debug/COFF:  tempFijada2.cof
+    Project:     tempFijada2.PJT
+    Call Tree:   tempFijada2.tre
+    Statistics:  tempFijada2.sta

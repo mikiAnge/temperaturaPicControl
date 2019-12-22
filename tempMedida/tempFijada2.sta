@@ -1,0 +1,84 @@
+
+ROM used: 1913 (23%)
+          1913 (23%) including unused fragments
+
+          1 Average locations per line
+          3 Average locations per statement
+
+RAM used: 32 (9%) at main() level
+          61 (17%) worst case
+
+Stack used: 5 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  173    75  11  tempFijada2.c
+  425     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F887.H
+ 1273   359  54  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+  409   121  18  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+  348    67  10  ..\..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+  150    43   6  ..\..\..\..\..\Program Files (x86)\PICC\drivers\KBD4x4.C
+----- -----
+ 2834   665 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   1   1             @delay_ms1
+ Inline        6             @MULS1616
+ Inline       13             @MULFF
+0     29   2   2             @ITOF
+0    310  16  11  1817 10.4  atol
+0     37   2   5             @DIV1616
+0      8   0   0             @const345
+ Inline        3   587  6.0  lcd_read_byte
+0      6   0   0    59  4.2  lcd_read_nibble
+0     12   1   1   172  3.4  lcd_send_nibble
+0     59   3   3   317  4.3  lcd_send_byte
+0     48   3   2   624  5.8  lcd_init
+0     18   1   4   186  5.5  lcd_gotoxy
+0     37   2   1   272  4.1  lcd_putc
+0     20   1   0             @const369
+0      3   0   0     3  0.0  kbd_init
+0    104   5   3  5865 10.1  kbd_getc
+0      8   0   0             @goto11317
+0     35   2   3   249  5.0  tecla_time
+0    441  23   5  2092  9.8  MAIN
+0      1   0   0             @const400
+0     70   4   3             @PSTRINGC7_362
+0      5   0   0             @const403
+0      5   0   0             @const404
+0      1   0   0             @const405
+0     21   1   5             @MUL1616
+0      8   0   0             @const409
+0     78   4   4             @PSTRINGCN7_362
+ Inline        5             @FTOSD
+0     66   3  13             @DIV3232
+0    346  18  13             @PRINTF_L32D_362FPFPF
+0      8   0   0             @const420
+0     39   2   2             @SITOF
+0     65   3  10             @FLT
+
+Program metrics:
+    Functions               12
+    Statements              665
+    Comments                1041
+    Volume (V)              16933
+    Difficilty (D)          66.9
+    Effort to implement (E) 1132783
+    Time to implement (T)   17 hours, 29 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   37
+    Maintainability (MI)    115
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1909  135  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

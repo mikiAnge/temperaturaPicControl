@@ -1,0 +1,189 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+005     PORTA
+006     kbd
+006     PORTB
+007     PORTC
+008     lcdlat
+008     lcd
+008     PORTD
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026     kbd_getc.kbd_call_count
+027.0   kbd_getc.kbd_down
+028     kbd_getc.last_key
+029     kbd_getc.col
+02A-02B bits
+02C-02F tem
+030     DIR
+031     @TRIS_C
+032     MAIN.K
+033-034 MAIN.aux
+035     i
+036-039 comp
+03A-03D @PRINTF_L32D_362FPFPF.P1
+03A-03B @SITOF.P2
+03A-03B @ITOF.P3
+03A-03B atol.s
+03A-03D @FLT.P1
+03A     @PSTRINGCN7_362.P2
+03A     lcd_init.i
+03A     tecla_time.c
+03A     MAIN.@SCRATCH1
+03A     @PSTRINGC7_362.@SCRATCH1
+03B-03C tecla_time.timeout
+03B     lcd_init.@SCRATCH1
+03B     MAIN.@SCRATCH2
+03B     @PSTRINGC7_362.@SCRATCH2
+03B     @PSTRINGCN7_362.@SCRATCH1
+03C-03D atol.result
+03C     @PSTRINGC7_362.@SCRATCH3
+03C     @PSTRINGCN7_362.@SCRATCH2
+03D     kbd_getc.kchar
+03D     @PSTRINGCN7_362.@SCRATCH3
+03E-041 @FLT.P1
+03E     atol.sign
+03E     kbd_getc.row
+03E     @PRINTF_L32D_362FPFPF.P1
+03F     atol.base
+03F     kbd_getc.@SCRATCH1
+03F     @PRINTF_L32D_362FPFPF.@SCRATCH1
+040     atol.index
+040     @PRINTF_L32D_362FPFPF.@SCRATCH2
+041     atol.c
+041     @PRINTF_L32D_362FPFPF.@SCRATCH3
+042-043 @MULS1616.P1
+042     atol.@SCRATCH1
+042     @PRINTF_L32D_362FPFPF.@SCRATCH4
+042     @FLT.@SCRATCH1
+043     atol.@SCRATCH2
+043     @PRINTF_L32D_362FPFPF.@SCRATCH5
+043     @FLT.@SCRATCH2
+044-045 @MULS1616.P1
+044     atol.@SCRATCH3
+044     @PRINTF_L32D_362FPFPF.@SCRATCH6
+045     @PRINTF_L32D_362FPFPF.@SCRATCH7
+046     @MULS1616.@SCRATCH1
+046     @PRINTF_L32D_362FPFPF.@SCRATCH8
+047     lcd_putc.c
+047-04A @FTOSD.P1
+047-04A @DIV3232.P2
+047-04A @MULFF.P3
+047     @MULS1616.@SCRATCH2
+048     lcd_gotoxy.x
+048     @delay_ms1.P1
+049     lcd_gotoxy.y
+04A     lcd_gotoxy.address
+04B-04E @DIV3232.P1
+04B-04E @MULFF.P2
+04B     lcd_gotoxy.@SCRATCH1
+04B     @FTOSD.@SCRATCH1
+04C     lcd_send_byte.address
+04D     lcd_send_byte.n
+04E     lcd_read_byte.low
+04E     lcd_send_byte.@SCRATCH1
+04F     lcd_read_byte.high
+04F     lcd_send_nibble.n
+04F     @MULFF.@SCRATCH1
+04F     @DIV3232.@SCRATCH1
+050     @MULFF.@SCRATCH2
+050     lcd_read_byte.@SCRATCH1
+050     @DIV3232.@SCRATCH2
+051     @MULFF.@SCRATCH3
+051     @DIV3232.@SCRATCH3
+052     @MULFF.@SCRATCH4
+052     @DIV3232.@SCRATCH4
+053     @MULFF.@SCRATCH5
+053     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+0034  @delay_ms1
+0459  @MULS1616
+01F8  @MULFF
+01D9  @ITOF
+03E6  atol
+0004  LCD_INIT_STRING
+005C  lcd_read_byte
+0055  lcd_read_nibble
+0049  lcd_send_nibble
+005B  lcd_send_byte
+0096  lcd_init
+00C9  lcd_gotoxy
+00DB  lcd_putc
+000C  KEYS
+00C6  kbd_init
+0146  kbd_getc
+01AE  @goto11317
+01B6  tecla_time
+0584  MAIN
+0025  @const398
+0100  @PSTRINGC7_362
+0026  @const401
+0020  @const402
+002B  @const403
+002C  @const404
+026D  @PSTRINGCN7_362
+0324  @FTOSD
+02BB  @DIV3232
+02FD  @PRINTF_L32D_362FPFPF
+051C  @SITOF
+0543  @FLT
+0584  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\PILAR\Desktop\ProyectoPICfuncional\
+
+Project Files:
+    Fijador de Temperatura.c
+    ..\..\..\..\Program Files (x86)\PICC\devices\16F887.H
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+    ..\..\..\..\Program Files (x86)\PICC\drivers\KBD4x4.C
+
+Units:
+    C:\Users\PILAR\Desktop\ProyectoPICfuncional\Fijador de Temperatura (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Fijador de Temperatura.err
+    Ext Symbols: Fijador de Temperatura.esym
+    INHX8:       Fijador de Temperatura.hex
+    Symbols:     Fijador de Temperatura.sym
+    List:        Fijador de Temperatura.lst
+    Debug/COFF:  Fijador de Temperatura.cof
+    Project:     Fijador de Temperatura.PJT
+    Call Tree:   Fijador de Temperatura.tre
+    Statistics:  Fijador de Temperatura.sta
